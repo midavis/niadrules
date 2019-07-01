@@ -6,12 +6,127 @@ package com.myspace.niaid;
 
 public class employee implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public employee() {
-    }
+	@org.kie.api.definition.type.Label(value = "First Name")
+	private java.lang.String fname;
+	@org.kie.api.definition.type.Label(value = "Last Name")
+	private java.lang.String lname;
+	@org.kie.api.definition.type.Label(value = "city")
+	private java.lang.String city;
+	@org.kie.api.definition.type.Label(value = "effective Start Date")
+	private java.util.Date effectiveSdate;
+	@org.kie.api.definition.type.Label(value = "Record Status Flag")
+	private java.lang.Boolean recstatusflag;
+	@org.kie.api.definition.type.Label(value = "Active Flag")
+	private java.lang.Boolean active;
+	@org.kie.api.definition.type.Label(value = "source")
+	private java.lang.String source;
+	@org.kie.api.definition.type.Label(value = "Employee Class")
+	private java.lang.String empClass;
+	@org.kie.api.definition.type.Label(value = "supervisor code")
+	private java.lang.Integer supv_code;
+	@org.kie.api.definition.type.Label(value = "Supervisor Status")
+	private java.lang.String supv_status;
 
+	public employee() {
+	}
 
+	public java.lang.String getFname() {
+		return this.fname;
+	}
 
+	public void setFname(java.lang.String fname) {
+		this.fname = fname;
+	}
+
+	public java.lang.String getLname() {
+		return this.lname;
+	}
+
+	public void setLname(java.lang.String lname) {
+		this.lname = lname;
+	}
+
+	public java.lang.String getCity() {
+		return this.city;
+	}
+
+	public void setCity(java.lang.String city) {
+		this.city = city;
+	}
+
+	public java.util.Date getEffectiveSdate() {
+		return this.effectiveSdate;
+	}
+
+	public void setEffectiveSdate(java.util.Date effectiveSdate) {
+		this.effectiveSdate = effectiveSdate;
+	}
+
+	public java.lang.Boolean getRecstatusflag() {
+		return this.recstatusflag;
+	}
+
+	public void setRecstatusflag(java.lang.Boolean recstatusflag) {
+		this.recstatusflag = recstatusflag;
+	}
+
+	public java.lang.Boolean getActive() {
+		return this.active;
+	}
+
+	public void setActive(java.lang.Boolean active) {
+		this.active = active;
+	}
+
+	public java.lang.String getSource() {
+		return this.source;
+	}
+
+	public void setSource(java.lang.String source) {
+		this.source = source;
+	}
+
+	public java.lang.String getEmpClass() {
+		return this.empClass;
+	}
+
+	public void setEmpClass(java.lang.String empClass) {
+		this.empClass = empClass;
+	}
+
+	public java.lang.Integer getSupv_code() {
+		return this.supv_code;
+	}
+
+	public void setSupv_code(java.lang.Integer supv_code) {
+		this.supv_code = supv_code;
+	}
+
+	public java.lang.String getSupv_status() {
+		return this.supv_status;
+	}
+
+	public void setSupv_status(java.lang.String supv_status) {
+		this.supv_status = supv_status;
+	}
+
+	public employee(java.lang.String fname, java.lang.String lname,
+			java.lang.String city, java.util.Date effectiveSdate,
+			java.lang.Boolean recstatusflag, java.lang.Boolean active,
+			java.lang.String source, java.lang.String empClass,
+			java.lang.Integer supv_code, java.lang.String supv_status) {
+		this.fname = fname;
+		this.lname = lname;
+		this.city = city;
+		this.effectiveSdate = effectiveSdate;
+		this.recstatusflag = recstatusflag;
+		this.active = active;
+		this.source = source;
+		this.empClass = empClass;
+		this.supv_code = supv_code;
+		this.supv_status = supv_status;
+	}
 
 }
