@@ -1,0 +1,9 @@
+package com.myspace.niaid;
+
+import java.lang.Number;
+
+rule "activeStatus"
+	dialect "mvel"
+	when
+	then
+end
