@@ -8,26 +8,29 @@ public class employee implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "First Name")
+	@org.kie.api.definition.type.Label("First Name")
 	private java.lang.String fname;
-	@org.kie.api.definition.type.Label(value = "Last Name")
+	@org.kie.api.definition.type.Label("Last Name")
 	private java.lang.String lname;
-	@org.kie.api.definition.type.Label(value = "city")
+	@org.kie.api.definition.type.Label("city")
 	private java.lang.String city;
-	@org.kie.api.definition.type.Label(value = "effective Start Date")
+	@org.kie.api.definition.type.Label("effective Start Date")
 	private java.util.Date effectiveSdate;
-	@org.kie.api.definition.type.Label(value = "Record Status Flag")
+	@org.kie.api.definition.type.Label("Record Status Flag")
 	private java.lang.Boolean recstatusflag;
-	@org.kie.api.definition.type.Label(value = "Active Flag")
+	@org.kie.api.definition.type.Label("Active Flag")
 	private java.lang.Boolean active;
-	@org.kie.api.definition.type.Label(value = "source")
+	@org.kie.api.definition.type.Label("source")
 	private java.lang.String source;
-	@org.kie.api.definition.type.Label(value = "Employee Class")
+	@org.kie.api.definition.type.Label("Employee Class")
 	private java.lang.String empClass;
-	@org.kie.api.definition.type.Label(value = "supervisor code")
+	@org.kie.api.definition.type.Label("supervisor code")
 	private java.lang.Integer supv_code;
-	@org.kie.api.definition.type.Label(value = "Supervisor Status")
+	@org.kie.api.definition.type.Label("Supervisor Status")
 	private java.lang.String supv_status;
+
+	@org.kie.api.definition.type.Label(value = "Current Date")
+	private java.util.Date currentDate;
 
 	public employee() {
 	}
@@ -112,11 +115,20 @@ public class employee implements java.io.Serializable {
 		this.supv_status = supv_status;
 	}
 
+	public java.util.Date getCurrentDate() {
+		return this.currentDate;
+	}
+
+	public void setCurrentDate(java.util.Date currentDate) {
+		this.currentDate = currentDate;
+	}
+
 	public employee(java.lang.String fname, java.lang.String lname,
 			java.lang.String city, java.util.Date effectiveSdate,
 			java.lang.Boolean recstatusflag, java.lang.Boolean active,
 			java.lang.String source, java.lang.String empClass,
-			java.lang.Integer supv_code, java.lang.String supv_status) {
+			java.lang.Integer supv_code, java.lang.String supv_status,
+			java.util.Date currentDate) {
 		this.fname = fname;
 		this.lname = lname;
 		this.city = city;
@@ -127,6 +139,7 @@ public class employee implements java.io.Serializable {
 		this.empClass = empClass;
 		this.supv_code = supv_code;
 		this.supv_status = supv_status;
+		this.currentDate = currentDate;
 	}
 
 }
