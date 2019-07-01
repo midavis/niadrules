@@ -5,7 +5,7 @@ import java.lang.Number;
 rule "activeStatus"
 	dialect "mvel"
 	when
-		emp : employee( effectiveSdate <= ( LocalDate.now() ) )
+		emp : employee( effectiveSdate <= emp.currentDate )
 	then
-		 System.out.println("out of date");
+		System.out.println("out of date");
 end
