@@ -6,7 +6,7 @@ rule "activeStatus"
 	dialect "mvel"
 	no-loop true
 	when
-		emp : employee( effectiveSdate <= emp.currentDate.date , recstatusflag != false )
+		emp : employee( effectiveSdate <= emp.currentDate , recstatusflag != false )
 	then
 		System.out.println("employee is active");
 		emp.setActive( true );
