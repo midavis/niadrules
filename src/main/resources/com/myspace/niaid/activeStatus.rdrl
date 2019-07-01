@@ -4,8 +4,10 @@ import java.lang.Number;
 
 rule "activeStatus"
 	dialect "mvel"
+	no-loop true
 	when
-		emp : employee( effectiveSdate <= emp.currentDate )
+		emp : employee( effectiveSdate <= emp.currentDate.date , recstatusflag != false )
 	then
-		System.out.println("out of date");
+		System.out.println("employee is active");
+		emp.setActive( true );
 end
