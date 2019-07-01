@@ -1,13 +1,12 @@
 package com.myspace.niaid;
 import java.util.Date;
 
-    global java.lang.String currentDate ;
-    #global java.util.Date currentDate; both tested
-    when
-    $united : LotteryUnitedDO(lotteryTypeId == LotteryTypeEnum.SSQ, 
-        totalFee >= 1000, 
-        shareCnt >= (0.1 * totalShare),
-        #unitedEndTime is a java.util.Date Object
-            unitedEndTime > currentDate     
-        )
-
+rule "test"
+	dialect "mvel"
+ 
+	when
+	amp : employee( effectiveSdate >= (new Date()) )
+	then
+		amp.setRecstatusflag( true );
+		System.out.println("date is greater");
+end 
