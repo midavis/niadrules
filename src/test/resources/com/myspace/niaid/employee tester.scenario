@@ -15,12 +15,16 @@
       <name>ee</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>2</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
+    </execution-trace>
     <expect-rule>
       <ruleName>activeStatus</ruleName>
       <expectedFire>true</expectedFire>
     </expect-rule>
   </fixtures>
+  <lastRunResult>2019-07-01 19:26:44.0 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.myspace.niaid</packageName>
