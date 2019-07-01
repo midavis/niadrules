@@ -16,16 +16,28 @@
           <value>05-Mar-2019</value>
           <nature>1</nature>
         </field-data>
+        <field-data>
+          <name>recstatusflag</name>
+          <value>false</value>
+          <nature>1</nature>
+        </field-data>
       </fieldData>
       <name>ee</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>109</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
+    </execution-trace>
     <expect-rule>
       <ruleName>activeStatus</ruleName>
+      <explanation>Rule [activeStatus] was activated 1 times.</explanation>
       <expectedFire>true</expectedFire>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
+  <lastRunResult>2019-07-01 19:33:53.59 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.myspace.niaid</packageName>
