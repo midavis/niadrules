@@ -8,4 +8,5 @@ rule "supervisor"
 		emp : employee( supv_code == 1 || supv_code == 2 , empClass == "citizen" )
 	then
 		emp.setSupv_status( "supervisor" );
+		System.out.println("setting employee to a supervisor");
 end
