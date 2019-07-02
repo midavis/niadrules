@@ -3,8 +3,49 @@
   <modelVersion>1.0</modelVersion>
   <attributes/>
   <metadataList/>
-  <lhs/>
-  <rhs/>
+  <lhs>
+    <fact>
+      <constraintList>
+        <constraints>
+          <fieldConstraint>
+            <value>$src</value>
+            <operator>==</operator>
+            <constraintValueType>7</constraintValueType>
+            <expression>
+              <parts/>
+              <index>2147483647</index>
+            </expression>
+            <parameters/>
+            <factType>employee</factType>
+            <fieldName>source</fieldName>
+            <fieldType>String</fieldType>
+          </fieldConstraint>
+        </constraints>
+      </constraintList>
+      <factType>employee</factType>
+      <boundName>emp1</boundName>
+      <isNegated>false</isNegated>
+      <window>
+        <parameters/>
+      </window>
+    </fact>
+  </lhs>
+  <rhs>
+    <setField>
+      <fieldValues>
+        <fieldValue>
+          <field>empClass</field>
+          <value>$empclass</value>
+          <nature>7</nature>
+          <type>String</type>
+        </fieldValue>
+      </fieldValues>
+      <variable>emp1</variable>
+    </setField>
+    <freeForm>
+      <text>System.out.println(&quot;we are setting empclass to &quot; + $empclass);</text>
+    </freeForm>
+  </rhs>
   <imports>
     <imports/>
   </imports>
@@ -12,10 +53,27 @@
   <isNegated>false</isNegated>
   <table>
     <entry>
+      <string>$src</string>
+      <list>
+        <string>src_db1</string>
+        <string>src_db2</string>
+      </list>
+    </entry>
+    <entry>
       <string>__ID_KOL_NAME__</string>
-      <list/>
+      <list>
+        <string>1</string>
+        <string>0</string>
+      </list>
+    </entry>
+    <entry>
+      <string>$empclass</string>
+      <list>
+        <string>contractor</string>
+        <string>student</string>
+      </list>
     </entry>
   </table>
-  <idCol>0</idCol>
-  <rowsCount>0</rowsCount>
+  <idCol>1</idCol>
+  <rowsCount>2</rowsCount>
 </rule>
