@@ -16,18 +16,15 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>10</executionTimeResult>
+      <executionTimeResult>6</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
-    <expect-rule>
-      <ruleName>classin</ruleName>
-      <explanation>Rule [classin] was not activated. Expected it to be activated.</explanation>
-      <expectedFire>true</expectedFire>
-      <successResult>false</successResult>
-      <actualResult>0</actualResult>
-    </expect-rule>
+    <execution-trace>
+      <executionTimeResult>0</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
+    </execution-trace>
   </fixtures>
-  <lastRunResult>2019-07-02 01:57:15.151 UTC</lastRunResult>
+  <lastRunResult>2019-07-02 02:20:50.996 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.myspace.niaid</packageName>
