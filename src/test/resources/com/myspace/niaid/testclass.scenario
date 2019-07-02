@@ -8,19 +8,26 @@
       <fieldData>
         <field-data>
           <name>source</name>
-          <value>src_db2</value>
+          <value>src_db1</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
       <name>emp</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>10</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
+    </execution-trace>
     <expect-rule>
       <ruleName>classin</ruleName>
+      <explanation>Rule [classin] was not activated. Expected it to be activated.</explanation>
       <expectedFire>true</expectedFire>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
   </fixtures>
+  <lastRunResult>2019-07-02 01:57:15.151 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.myspace.niaid</packageName>
