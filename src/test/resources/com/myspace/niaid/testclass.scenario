@@ -8,7 +8,7 @@
       <fieldData>
         <field-data>
           <name>source</name>
-          <value>src_db1</value>
+          <value></value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -24,7 +24,7 @@
       <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
   </fixtures>
-  <lastRunResult>2019-07-02 02:20:50.996 UTC</lastRunResult>
+  <lastRunResult>2019-07-02 02:21:07.837 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.myspace.niaid</packageName>
