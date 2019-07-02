@@ -1,7 +1,12 @@
 <rule>
   <name>classrule</name>
   <modelVersion>1.0</modelVersion>
-  <attributes/>
+  <attributes>
+    <attribute>
+      <attributeName>no-loop</attributeName>
+      <value>true</value>
+    </attribute>
+  </attributes>
   <metadataList/>
   <lhs>
     <fact>
@@ -43,7 +48,7 @@
       <variable>emp1</variable>
     </setField>
     <freeForm>
-      <text>System.out.println(&quot;we are setting empclass to &quot; + @{empclass});</text>
+      <text>System.out.println(&quot;another line &quot; + emp1.getEmpClass);</text>
     </freeForm>
   </rhs>
   <imports>
@@ -57,13 +62,6 @@
       <list>
         <string>src_db1</string>
         <string>src_db2</string>
-      </list>
-    </entry>
-    <entry>
-      <string>empclass</string>
-      <list>
-        <string></string>
-        <string></string>
       </list>
     </entry>
     <entry>
