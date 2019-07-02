@@ -29,8 +29,11 @@ public class employee implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Supervisor Status")
 	private java.lang.String supv_status;
 
-	@org.kie.api.definition.type.Label(value = "Current Date")
+	@org.kie.api.definition.type.Label("Current Date")
 	private java.util.Date currentDate;
+
+	@org.kie.api.definition.type.Label(value = "state")
+	private java.lang.String state;
 
 	public employee() {
 	}
@@ -123,12 +126,20 @@ public class employee implements java.io.Serializable {
 		this.currentDate = currentDate;
 	}
 
+	public java.lang.String getState() {
+		return this.state;
+	}
+
+	public void setState(java.lang.String state) {
+		this.state = state;
+	}
+
 	public employee(java.lang.String fname, java.lang.String lname,
 			java.lang.String city, java.util.Date effectiveSdate,
 			java.lang.Boolean recstatusflag, java.lang.Boolean active,
 			java.lang.String source, java.lang.String empClass,
 			java.lang.Integer supv_code, java.lang.String supv_status,
-			java.util.Date currentDate) {
+			java.util.Date currentDate, java.lang.String state) {
 		this.fname = fname;
 		this.lname = lname;
 		this.city = city;
@@ -140,6 +151,7 @@ public class employee implements java.io.Serializable {
 		this.supv_code = supv_code;
 		this.supv_status = supv_status;
 		this.currentDate = currentDate;
+		this.state = state;
 	}
 
 }
