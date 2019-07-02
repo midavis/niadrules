@@ -48,7 +48,7 @@
       <variable>emp1</variable>
     </setField>
     <freeForm>
-      <text>System.out.println(&quot;another line &quot; + emp1.getEmpClass);</text>
+      <text>System.out.println(&quot;classification is &quot; + emp1.getEmpClass);</text>
     </freeForm>
   </rhs>
   <imports>
