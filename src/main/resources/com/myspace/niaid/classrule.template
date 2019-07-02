@@ -1,7 +1,12 @@
 <rule>
   <name>classrule</name>
   <modelVersion>1.0</modelVersion>
-  <attributes/>
+  <attributes>
+    <attribute>
+      <attributeName>no-loop</attributeName>
+      <value>true</value>
+    </attribute>
+  </attributes>
   <metadataList/>
   <lhs>
     <fact>
