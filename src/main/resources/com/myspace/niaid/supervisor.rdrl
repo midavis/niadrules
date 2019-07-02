@@ -1,0 +1,9 @@
+package com.myspace.niaid;
+
+import java.lang.Number;
+
+rule "supervisor"
+	dialect "mvel"
+	when
+	then
+end
