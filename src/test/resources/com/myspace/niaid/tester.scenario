@@ -8,17 +8,17 @@
       <fieldData>
         <field-data>
           <name>currentDate</name>
-          <value>01-Jul-2019</value>
+          <value>01-Jul-2018</value>
           <nature>1</nature>
         </field-data>
         <field-data>
           <name>effectiveSdate</name>
-          <value>05-Mar-2019</value>
+          <value>05-Mar-2017</value>
           <nature>1</nature>
         </field-data>
         <field-data>
           <name>recstatusflag</name>
-          <value>false</value>
+          <value>true</value>
           <nature>1</nature>
         </field-data>
       </fieldData>
@@ -26,7 +26,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>109</executionTimeResult>
+      <executionTimeResult>22</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
@@ -37,7 +37,7 @@
       <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
-  <lastRunResult>2019-07-01 19:33:53.59 UTC</lastRunResult>
+  <lastRunResult>2019-11-09 17:54:40.776 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.myspace.niaid</packageName>
